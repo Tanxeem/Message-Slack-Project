@@ -1,4 +1,5 @@
 import { StatusCodes } from 'http-status-codes';
+
 class ValidationError extends Error {
   constructor(errorDetails, message) {
     super(message);
@@ -12,4 +13,5 @@ class ValidationError extends Error {
     this.statusCode = StatusCodes.BAD_REQUEST;
   }
 }
+
 export default ValidationError;
